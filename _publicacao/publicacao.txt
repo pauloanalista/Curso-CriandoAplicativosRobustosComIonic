@@ -1,0 +1,42 @@
+Maua - Gerar APK
+
+PASSOS ANTES DE GERAR APK
+- Ver a vers?o seta no config.xml
+- Verificar se ja gerei as imagens com ionic cordova resources
+- Ajustar os tamanhos da logo, pois o ionic gera cortando um peda?o da imagem
+
+
+passo 1
+entra na pasta do app e roda o comando abaixo 
+ex: 
+cd "C:\_QSTI\_TFS\Qsti.VaiDeBus\Qsti.VaiDeBus.App"
+
+ionic cordova build android --release --prod
+
+
+passo 2 - Gerar a chave (gere uma unica vez, nao gerar para novas versoes)
+cd "C:\Program Files\Java\jre1.8.0_161\bin"
+
+executar (para novas versoes igonorar o comando)
+.\keytool.exe -genkey -v -keystore "C:\_dev\ionic\projetos\AppUdemy\appUdemy.keystore" -alias appUdemyKey -keyalg RSA -keysize 2048 -validity 10000
+
+obs: o alias da chave ser? usada em outras versoes do app
+
+
+senha: minha senha padrao
+
+
+passo 4 - ASSINAR APK
+Entrar na pasta abaixo:
+cd "C:\Program Files\Java\jdk1.8.0_161\bin\"
+
+Executar o seguinte comando
+.\jarsigner.exe -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore "C:\_dev\ionic\projetos\AppUdemy\appUdemy.keystore" "C:\_dev\ionic\projetos\AppUdemy\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk" appUdemyKey
+
+
+5 - EXECUTAR ZIPALIGN
+cd "C:\Program Files (x86)\Android\android-sdk\build-tools\26.0.2\"
+
+.\zipalign.exe -v 4 "C:\_dev\ionic\projetos\AppUdemy\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk" "C:\_dev\ionic\projetos\AppUdemy\AppUdemy-0.0.1.apk"
+
+
