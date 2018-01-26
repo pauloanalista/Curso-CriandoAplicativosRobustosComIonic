@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Card</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Card simples
+    </ion-card-header>
+    <ion-card-content>
+      Criamos um card simples
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Lanches
+    </ion-card-header>
+    
+    <ion-list>
+      <button ion-item>
+        <ion-icon name="cart" item-start></ion-icon>
+        Hamburguer
+      </button>
+
+      <button ion-item>
+        <ion-icon name="cafe" item-start></ion-icon>
+        Café
+      </button>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>
+    <ion-card-content>
+      <ion-card-title>Curso de canto</ion-card-title>
+      <p>Aprenda cantar de uma forma incrível</p>
+    </ion-card-content>
+    
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorito
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='musical-notes'></ion-icon>
+          Ouvir
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Shared
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/>
+    <div class="titulo-card">Rio de Janeiro</div>
+    <div class="subtitulo-card">Show de rock</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/badu-live.png"/>
+    <div class="titulo-card">São Paulo</div>
+    <div class="subtitulo-card">Show gospel</div>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="http://0.gravatar.com/avatar/0b6442b3dc111885b6f0b54d6083e952?s=100&d=mm&r=g">
+      </ion-avatar>
+      <h2>Paulo Rogério</h2>
+      <p>29 de janeiro de 1981</p>
+    </ion-item>
+
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/advance-card-bttf.png">
+
+    <ion-card-content>
+    <p>Estude Ionic e sai na frente!</p>  
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="md-create"></ion-icon>
+          <div>12 curtidas</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>50 comentários</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          5 star
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+      <img src="https://ionicframework.com/dist/preview-app/www/assets/img/advance-card-map-madison.png">
+      <ion-fab right top>
+        <button ion-fab>
+          <ion-icon name="pin"></ion-icon>
+        </button>
+      </ion-fab>
+    
+      <ion-item>
+        <ion-icon name="football" item-start large></ion-icon>
+        <h2>Museum of Football</h2>
+        <p>11 N. Way St, Madison, WI 53703</p>
+      </ion-item>
+    
+      <ion-item>
+        <ion-icon name="wine" item-left large ></ion-icon>
+        <h2>Institute of Fine Cocktails</h2>
+        <p>14 S. Hop Avenue, Madison, WI 53703</p>
+      </ion-item>
+    
+      <ion-item>
+        <span item-left>18 min</span>
+        <span item-left>(2.6 mi)</span>
+        <button ion-button icon-left clear item-end>
+          <ion-icon name="navigate"></ion-icon>
+          Start
+        </button>
+      </ion-item>
+    
+    </ion-card>
+
+</ion-content>

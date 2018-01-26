@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Pagina2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngIf="usuario != null">
+    <ion-item>Nome: {{usuario.nome}}</ion-item>
+    <ion-item>Idade: {{usuario.idade}}</ion-item>
+  </ion-list>
+
+  <button ion-button (click)="fecharPagina()">Sair da pagina</button>
+</ion-content>

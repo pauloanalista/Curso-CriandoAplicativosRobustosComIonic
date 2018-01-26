@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Range</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  brilhoDaTela {{brilhoDaTela}}
+  <br>
+  brilhoDaTela2 {{brilhoDaTela2}}
+  <br>
+  taxa {{taxa}}
+  <br>
+  faixaEtaria {{faixaEtaria.lower}} - {{faixaEtaria.upper}}
+  <ion-list>
+    <ion-item>
+      <ion-range [(ngModel)]="brilhoDaTela" min="0" max="200" color="danger">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>200</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range [(ngModel)]="brilhoDaTela2" step="50" min="0" max="200" color="danger">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>200</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Doação</ion-label>
+      <ion-range min="1000" max="2000" step="100" snaps="true" color="danger" [(ngModel)]="taxa"></ion-range>
+    </ion-item>
+    
+
+    <ion-item>
+      <ion-label>Faixa etária do show</ion-label>
+      <ion-range dualKnobs="true" pin="true" [(ngModel)]="faixaEtaria" color="dark">
+        <ion-icon range-left small name="brush"></ion-icon>
+        <ion-icon range-right small name="brush"></ion-icon>
+      </ion-range>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

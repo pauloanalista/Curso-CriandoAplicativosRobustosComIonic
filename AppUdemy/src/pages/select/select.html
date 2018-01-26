@@ -1,0 +1,82 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Select</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Frutas</ion-label>
+      <ion-select>
+        <ion-option value="P">Pera</ion-option>
+        <ion-option value="A">Abacate</ion-option>
+        <ion-option value="L">Laranja</ion-option>
+        <ion-option value="J">Jaca</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Multi Frutas</ion-label>
+      <ion-select multiple="true" cancelText="Cancelar" okText="Selecionar">
+        <ion-option value="P">Pera</ion-option>
+        <ion-option value="A">Abacate</ion-option>
+        <ion-option value="L">Laranja</ion-option>
+        <ion-option value="J">Jaca</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Multi Frutas</ion-label>
+      <ion-select multiple="true" disabled cancelText="Cancelar" okText="Selecionar">
+        <ion-option value="P">Pera</ion-option>
+        <ion-option value="A">Abacate</ion-option>
+        <ion-option value="L">Laranja</ion-option>
+        <ion-option value="J">Jaca</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Frutas</ion-label>
+      <ion-select [selectOptions]="selectOptions">
+        <ion-option value="P">Pera</ion-option>
+        <ion-option value="A">Abacate</ion-option>
+        <ion-option value="L">Laranja</ion-option>
+        <ion-option value="J">Jaca</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Action Sheet </ion-label>
+      <ion-select interface="action-sheet">
+        <ion-option value="A">Arroz</ion-option>
+        <ion-option value="F">Feijão</ion-option>
+        <ion-option value="M">Macarrão</ion-option>
+        <ion-option value="C">Coxinha</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Popover</ion-label>
+      <ion-select interface="popover">
+        <ion-option value="A">Arroz</ion-option>
+        <ion-option value="F">Feijão</ion-option>
+        <ion-option value="M">Macarrão</ion-option>
+        <ion-option value="C">Coxinha</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Alert</ion-label>
+      <ion-select interface="alert">
+        <ion-option value="A">Arroz</ion-option>
+        <ion-option value="F">Feijão</ion-option>
+        <ion-option value="M">Macarrão</ion-option>
+        <ion-option value="C">Coxinha</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>

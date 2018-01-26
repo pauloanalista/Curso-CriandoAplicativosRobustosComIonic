@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Camera</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button block (click)="tirarFoto()">TIRAR FOTO</button>
+  <ion-card>
+    <img [hidden]="!foto" src="{{foto}}">
+  </ion-card>
+</ion-content>

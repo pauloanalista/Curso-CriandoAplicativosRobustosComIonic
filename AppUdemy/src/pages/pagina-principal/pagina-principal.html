@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Pagina Principal</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Navegue para:</h1>
+  <ion-list>
+    <ion-item (click)="abrirPagina1ComoRoot()">
+      Pagina 1 como root
+    </ion-item>
+    <ion-item (click)="abrirPagina2ComoRoot()">
+      Pagina 2 como root
+    </ion-item>
+    <ion-item (click)="abrirPagina1ComPush()">
+      Pagina 1 com push
+    </ion-item>
+    <ion-item (click)="abrirPagina2ComPush()">
+      Pagina 2 com push
+    </ion-item>
+  </ion-list>
+</ion-content>

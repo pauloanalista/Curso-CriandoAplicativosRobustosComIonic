@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cep</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="form">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Informe seu CEP</ion-label>
+        <ion-input type="number" formControlName="cep"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button block (click)="consultarEnderecoPeloCep()">Consultar endereço</button>
+      </ion-item>
+    </ion-list>
+
+    <p *ngIf="response">
+        Cep: {{response.cep}} <br>
+        Bairro: {{response.bairro}} <br>
+        Localidade: {{response.localidade}}
+    </p>
+  </form>
+</ion-content>

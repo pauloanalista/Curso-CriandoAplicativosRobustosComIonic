@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tabs</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-tabs>
+    <ion-tab [root]="toastPage" tabTitle="Toasts" tabIcon="star"></ion-tab>
+    <ion-tab [root]="botoesPage" tabTitle="Botões" tabIcon="navigate"></ion-tab>
+    <ion-tab [root]="cardPage" tabTitle="Cards" tabIcon="call"></ion-tab>
+  </ion-tabs>
+  <!-- 
+  <h2>Icones e Badge</h2>
+  <ion-tabs tabs-only selectedIndex="1" color="primary">
+    <ion-tab tabIcon="call" [root]="toastPage"></ion-tab>
+    <ion-tab tabIcon="heart" [root]="toastPage"></ion-tab>
+    <ion-tab tabIcon="settings" [root]="toastPage" tabBadge="2" tabBadgeStyle="danger"></ion-tab>
+  </ion-tabs> -->
+
+  <!-- Icones com texto no topo
+  <ion-tabs tabs-only selectedIndex="2" color="secondary">
+    <ion-tab tabTitle="Location" tabIcon="navigate" [root]="toastPage"></ion-tab>
+    <ion-tab tabTitle="Share" tabIcon="share" [root]="toastPage" tabBadge="12" tabBadgeStyle="dark"></ion-tab>
+    <ion-tab tabTitle="Radio" tabIcon="musical-notes" [root]="toastPage"></ion-tab>
+  </ion-tabs> -->
+
+  <!-- Icones abaixo do texto -->
+  <!-- <ion-tabs tabs-only tabsLayout="icon-bottom" selectedIndex="2" color="secondary">
+    <ion-tab tabTitle="Location" tabIcon="navigate" [root]="toastPage"></ion-tab>
+    <ion-tab tabTitle="Share" tabIcon="share" [root]="toastPage" tabBadge="12" tabBadgeStyle="dark"></ion-tab>
+    <ion-tab tabTitle="Radio" tabIcon="musical-notes" [root]="toastPage"></ion-tab>
+  </ion-tabs> -->
+
+  <!-- Icones no final -->
+  <!-- <ion-tabs tabs-only tabsLayout="icon-end" selectedIndex="2" color="secondary">
+    <ion-tab tabTitle="Location" tabIcon="navigate" [root]="toastPage"></ion-tab>
+    <ion-tab tabTitle="Share" tabIcon="share" [root]="toastPage" tabBadge="12" tabBadgeStyle="dark"></ion-tab>
+    <ion-tab tabTitle="Radio" tabIcon="musical-notes" [root]="toastPage"></ion-tab>
+  </ion-tabs> -->
+
+  <!-- Icones no inicio -->
+  <!-- <ion-tabs tabs-only tabsLayout="icon-start" selectedIndex="2" color="secondary">
+    <ion-tab tabTitle="Location" tabIcon="navigate" [root]="toastPage"></ion-tab>
+    <ion-tab tabTitle="Share" tabIcon="share" [root]="toastPage" tabBadge="12" tabBadgeStyle="dark"></ion-tab>
+    <ion-tab tabTitle="Radio" tabIcon="musical-notes" [root]="toastPage"></ion-tab>
+  </ion-tabs> -->
+
+  <!-- Icones no inicio -->
+  <!-- <ion-tabs tabs-only tabsLayout="icon-hide" selectedIndex="2" color="secondary">
+      <ion-tab tabTitle="Location" tabIcon="navigate" [root]="toastPage"></ion-tab>
+      <ion-tab tabTitle="Share" tabIcon="share" [root]="toastPage" tabBadge="12" tabBadgeStyle="dark"></ion-tab>
+      <ion-tab tabTitle="Radio" tabIcon="musical-notes" [root]="toastPage"></ion-tab>
+    </ion-tabs> -->
+
+  <!-- Apenas texto -->
+  <!-- <ion-tabs tabs-only color="primary">
+    <ion-tab tabTitle="Cursos grátis" [root]="toastPage"></ion-tab>
+    <ion-tab tabTitle="Cursos baratos" [root]="botoesPage"></ion-tab>
+    <ion-tab tabTitle="Cursos caros" [root]="toastPage"></ion-tab>
+  </ion-tabs> -->
+</ion-content>

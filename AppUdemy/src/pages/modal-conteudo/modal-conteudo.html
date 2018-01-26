@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Modal Conteudo</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="fecharModal()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngIf="usuario">
+    <ion-item>{{usuario.nome}}</ion-item>
+    <ion-item>{{usuario.idade}}</ion-item>
+  </ion-list>
+  <button ion-button block (click)="fecharModalComParametros()">Fechar modal passando parametros</button>
+</ion-content>

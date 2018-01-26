@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Slides</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-slides (ionSlideDidChange)="slideAlterado()" loop="true" style="background-color: black">
+    <ion-slide>
+      <img src="./assets/slides/slide1.jpeg">
+    </ion-slide>
+    <ion-slide>
+      <img src="./assets/slides/slide2.jpeg">
+    </ion-slide>
+    <ion-slide>
+      <img src="./assets/slides/slide3.jpeg">
+    </ion-slide>
+  </ion-slides>
+  <button ion-button block (click)="avancarSlide()">Avançar</button>
+</ion-content>

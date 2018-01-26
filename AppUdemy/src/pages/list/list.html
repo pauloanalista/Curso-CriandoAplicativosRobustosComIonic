@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <h2>Lista com ion-item com linhas</h2>
+    <ion-list>
+      <ion-item *ngFor="let item of itens" (click)="selecionarItem(item)" >{{item}}</ion-item>
+    </ion-list>
+  <h2>Lista com ion-item sem linhas</h2>
+  <ion-list no-lines>
+    <ion-item *ngFor="let item of itens" (click)="selecionarItem(item)" >{{item}}</ion-item>
+  </ion-list>
+  <h2>Lista com button</h2>
+  <ion-list>
+    <button ion-item *ngFor="let item of itens" (click)="selecionarItem(item)">{{item}}</button>
+  </ion-list>
+
+  <h2>ion-item-group</h2>
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+
+  <h2>Lista com header</h2>
+  <ion-list>
+    <ion-list-header>Frutas</ion-list-header>
+    <ion-item *ngFor="let item of itens" (click)="selecionarItem(item)" >{{item}}</ion-item>
+  </ion-list>
+
+  <h2>Lista com icones e badge</h2>
+  <ion-list>
+    <ion-item *ngFor="let item of itens" (click)="selecionarItem(item)">
+      <ion-icon name="leaf" item-start></ion-icon>
+      {{item}}
+      <ion-badge item-end>111</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <h2>Lista com avatar</h2>
+  <ion-list>
+    <ion-item *ngFor="let item of itens" (click)="selecionarItem(item)">
+      <ion-avatar item-start>
+        <img src="http://0.gravatar.com/avatar/0b6442b3dc111885b6f0b54d6083e952?s=100&d=mm&r=g">
+      </ion-avatar>
+      <h2>{{item}}</h2>
+      <p>Está fruta é saudável</p>
+    </ion-item>
+  </ion-list>
+
+  <h2>Lista Slinding</h2>
+  <ion-list>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="http://0.gravatar.com/avatar/0b6442b3dc111885b6f0b54d6083e952?s=100&d=mm&r=g">
+          </ion-avatar>
+          <h2>Slimer</h2>
+        </ion-item>
+        <ion-item-options side="left">
+          <button ion-button color="primary">
+            <ion-icon name="text"></ion-icon>
+            Text
+          </button>
+          <button ion-button color="secondary">
+            <ion-icon name="call"></ion-icon>
+            Call
+          </button>
+        </ion-item-options>
+        <ion-item-options side="right">
+          <button ion-button color="primary">
+            <ion-icon name="mail"></ion-icon>
+            Email
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+            <img src="http://0.gravatar.com/avatar/0b6442b3dc111885b6f0b54d6083e952?s=100&d=mm&r=g">
+        </ion-thumbnail>
+        <h2>Paulo Rogério</h2>
+        <p>Desenvolvedor FullStack</p>
+        <button ion-button clear item-end>Curtir</button>
+      </ion-item>
+    </ion-list>
+</ion-content>
