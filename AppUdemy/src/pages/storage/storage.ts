@@ -14,10 +14,7 @@ export class StoragePage {
 
   ionViewDidLoad() {
     
-    this.storage.get('ultimoBotaoPressionado').then((val) => {
-      console.log(val);
-      this.ultimoBotaoPressionado = val;
-    });
+    this.consultar();
   }
 
   botao1(){
@@ -28,6 +25,8 @@ export class StoragePage {
     localStorage.setItem('opcao', '1');
 
     sessionStorage.setItem('opcao', '1');
+
+    
   }
 
   botao2(){
@@ -40,4 +39,10 @@ export class StoragePage {
     
   }
 
+  consultar(){
+    this.storage.get('ultimoBotaoPressionado').then((val) => {
+      //console.log(val);
+      this.ultimoBotaoPressionado = val;
+    });
+  }
 }
