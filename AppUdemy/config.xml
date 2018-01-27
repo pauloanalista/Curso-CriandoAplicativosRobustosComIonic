@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="curso.ionic.udemy" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>AppUdemy</name>
+<widget id="curso.ionic.udemy" version="0.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Curso Ionic</name>
     <description>Curso voltado para desenvolvedores mobile, utilizando o framework Ionic</description>
     <author email="paulo.analista@outlook.com" href="http://ionicframework.com/">Paulo Rogério</author>
     <content src="index.html" />

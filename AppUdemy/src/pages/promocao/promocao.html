@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Promoções</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  class="animated bounceInUp">
+  <ion-card (click)="showCurso('https://www.udemy.com/criando-apis-robustas-em-c/?couponCode=APIROBUSTA25')">
+      <img src="assets/curso_api.jpg">
+      
+      <ion-item>
+        <ion-icon name="star" item-start large></ion-icon>
+        <h2>Criando Apis robustas em C#</h2>
+        <p>90% de desconto - R$25,00 </p>
+      </ion-item>
+    </ion-card>
+
+    <ion-card (click)="showCurso('https://www.udemy.com/criando-aplicativos-robustos-com-ionic/?couponCode=IONIC25')">
+      <img src="assets/curso_ionic.jpg">
+    
+      <ion-item>
+        <ion-icon name="star" item-start large></ion-icon>
+        <h2>Criando aplicativos robustos com Ionic</h2>
+        <p>92% de desconto - R$24,99 </p>
+      </ion-item>
+    </ion-card>
+
+    <ion-card (click)="showCurso('https://www.udemy.com/dominando-linq-e-lambda-expressions-com-c/?couponCode=LINQ_25')">
+      <img src="assets/curso_linq.jpg">
+    
+      <ion-item>
+        <ion-icon name="star" item-start large></ion-icon>
+        <h2>Dominando Linq e Lambda Expression com C#</h2>
+        <p>por apenas - R$25,00 </p>
+      </ion-item>
+    </ion-card>
+
+    <ion-card (click)="showCurso('https://www.udemy.com/dominando-postman-em-10-passos/?couponCode=ILOVECODE_25')">
+      <img src="assets/curso_postman.jpg">
+    
+      <ion-item>
+        <ion-icon name="star" item-start large></ion-icon>
+        <h2>Dominando Postman em 10 passos</h2>
+        <p>por apenas - R$25,00 </p>
+      </ion-item>
+    </ion-card>
+</ion-content>

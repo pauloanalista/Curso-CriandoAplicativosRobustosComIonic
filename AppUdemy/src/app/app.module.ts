@@ -48,8 +48,9 @@ import { CepPage } from '../pages/cep/cep';
 import { CepProvider } from '../providers/cep/cep';
 import { HttpModule } from "@angular/http";
 import { StoragePage } from '../pages/storage/storage';
-import { IonicStorageModule } from '@ionic/storage';
 import { AnimacaoPage } from '../pages/animacao/animacao';
+import { PromocaoPage } from '../pages/promocao/promocao';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -91,14 +92,16 @@ import { AnimacaoPage } from '../pages/animacao/animacao';
     LocalizacaoPage,
     CepPage,
     StoragePage,
-    AnimacaoPage
+    AnimacaoPage,
+    PromocaoPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
-    //IonicModule.forRoot(MyApp, {mode: 'ios'}),
+    IonicModule.forRoot(MyApp, {mode: 'ios'}),
+    //IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -140,7 +143,8 @@ import { AnimacaoPage } from '../pages/animacao/animacao';
     LocalizacaoPage,
     CepPage,
     StoragePage,
-    AnimacaoPage
+    AnimacaoPage,
+    PromocaoPage
   ],
   providers: [
     StatusBar,

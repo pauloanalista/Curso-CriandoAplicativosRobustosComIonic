@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { PromocaoPage } from '../promocao/promocao';
 
 
 @Component({
@@ -7,11 +9,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
 
   }
 
-  redirecionarParaCurso(){
+  redirecionarParaCurso() {
     window.open('https://www.udemy.com/criando-aplicativos-robustos-com-ionic/?couponCode=IONIC25');
+  }
+
+  showPromocao() {
+    this.navCtrl.push(PromocaoPage);
   }
 }

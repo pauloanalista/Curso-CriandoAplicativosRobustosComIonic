@@ -1,40 +1,66 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Principal</ion-title>
+    <ion-title>Curso de Ionic</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
+
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons start>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+  
+      <ion-title>Curso de Ionic</ion-title>
+  
+      <ion-buttons end>
+          <button ion-button icon-only (click)="showPromocao()">
+            <ion-icon name="star"></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-toolbar>
+  
+  </ion-header>
+  
 
 <ion-content padding>
   <h3 class="animated bounceInRight">App Udemy</h3>
   <h5 class="animated infinite fadeIn">Criando aplicativos robustos com ionic</h5>
 
-  <h3>O que aprenderei neste curso?</h3>
+  <h3 class="animated bounceInUp">O que aprenderei neste curso?</h3>
   <ion-list class="animated bounceInUp">
     <ion-item>
+      <ion-icon name="ios-arrow-forward" item-start></ion-icon>
       criar páginas
     </ion-item>
     <ion-item>
+      <ion-icon name="ios-arrow-forward" item-start></ion-icon>
       usar componentes visuais
     </ion-item>
     <ion-item>
+      <ion-icon name="ios-arrow-forward" item-start></ion-icon>
       usar componentes nativos
     </ion-item>
     <ion-item>
+      <ion-icon name="ios-arrow-forward" item-start></ion-icon>
       criar animações
     </ion-item>
     <ion-item>
+      <ion-icon name="ios-arrow-forward" item-start></ion-icon>
       publicar app na Google play
     </ion-item>
     <ion-item>
+      <ion-icon name="ios-arrow-forward" item-start></ion-icon>
       e muito mais...
     </ion-item>
   </ion-list>
 
-  <h3>Com quem eu aprenderei?</h3>
-  <ion-card>
+  <h3 class="animated bounceInUp">Com quem eu aprenderei?</h3>
+  <ion-card class="animated bounceInUp">
     <ion-item>
       <ion-avatar item-start>
         <img src="http://0.gravatar.com/avatar/0b6442b3dc111885b6f0b54d6083e952?s=100&d=mm&r=g">
@@ -44,13 +70,16 @@
     </ion-item>
 
     <ion-card-content>
-    <p>Serei o instutor de vocês nesta nova jornada, junto aprenderemos praticamente todos os componentes visuais do ionic, também conheceremos componentes nativos, realizaremos animações, divulgaremos nosso app na Google Play e muito mais!</p>  
+      <p>Serei o instutor de vocês nesta nova jornada, junto aprenderemos praticamente todos os componentes visuais do ionic,
+        também conheceremos componentes nativos, realizaremos animações, divulgaremos nosso app na Google Play e muito mais!
+      </p>
 
-    <p><b>Desconto: </b> Receba 92% de desconto com este cupom <b class="animated infinite fadeIn">IONIC25</b></p>
+      <p>
+        <b>Desconto: </b> Receba 92% de desconto com este cupom
+        <b class="animated infinite fadeIn">IONIC25</b>
+      </p>
     </ion-card-content>
   </ion-card>
 
-
-
-  <button block ion-button secondary (click)="redirecionarParaCurso()">Saber mais detalhes sobre o curso</button>
+  <button class="animated bounceInRight" block ion-button secondary (click)="redirecionarParaCurso()">Saber mais detalhes sobre o curso</button>
 </ion-content>
