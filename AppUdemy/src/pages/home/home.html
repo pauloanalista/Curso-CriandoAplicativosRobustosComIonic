@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -8,34 +8,49 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>App Udemy</h3>
-  <h5>Criando aplicativos robustos com ionic</h5>
+  <h3 class="animated bounceInRight">App Udemy</h3>
+  <h5 class="animated infinite fadeIn">Criando aplicativos robustos com ionic</h5>
 
-  <ion-list >
-    <ion-list-header>
-      <ion-title>Neste curso iremos aprender:</ion-title>
-    </ion-list-header>
-    <ion-item >
-      criar páginas  
+  <h3>O que aprenderei neste curso?</h3>
+  <ion-list class="animated bounceInUp">
+    <ion-item>
+      criar páginas
     </ion-item>
-    <ion-item >
+    <ion-item>
       usar componentes visuais
     </ion-item>
-    <ion-item >
+    <ion-item>
       usar componentes nativos
     </ion-item>
-    <ion-item >
+    <ion-item>
+      criar animações
+    </ion-item>
+    <ion-item>
       publicar app na Google play
     </ion-item>
-    <ion-item >
+    <ion-item>
       e muito mais...
     </ion-item>
   </ion-list>
-  <p>
-    
-    
-    
-    
-    
-  <button block ion-button secondary menuToggle>Abrir Menu</button>
+
+  <h3>Com quem eu aprenderei?</h3>
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="http://0.gravatar.com/avatar/0b6442b3dc111885b6f0b54d6083e952?s=100&d=mm&r=g">
+      </ion-avatar>
+      <h2>Paulo Rogério</h2>
+      <p>Desenvolvedor FullStack</p>
+    </ion-item>
+
+    <ion-card-content>
+    <p>Serei o instutor de vocês nesta nova jornada, junto aprenderemos praticamente todos os componentes visuais do ionic, também conheceremos componentes nativos, realizaremos animações, divulgaremos nosso app na Google Play e muito mais!</p>  
+
+    <p><b>Desconto: </b> Receba 92% de desconto com este cupom <b class="animated infinite fadeIn">IONIC25</b></p>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <button block ion-button secondary (click)="redirecionarParaCurso()">Saber mais detalhes sobre o curso</button>
 </ion-content>

@@ -49,6 +49,7 @@ import { CepProvider } from '../providers/cep/cep';
 import { HttpModule } from "@angular/http";
 import { StoragePage } from '../pages/storage/storage';
 import { IonicStorageModule } from '@ionic/storage';
+import { AnimacaoPage } from '../pages/animacao/animacao';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { IonicStorageModule } from '@ionic/storage';
     BarcodePage,
     LocalizacaoPage,
     CepPage,
-    StoragePage
+    StoragePage,
+    AnimacaoPage
   ],
   imports: [
     BrowserModule,
@@ -137,7 +139,8 @@ import { IonicStorageModule } from '@ionic/storage';
     BarcodePage,
     LocalizacaoPage,
     CepPage,
-    StoragePage
+    StoragePage,
+    AnimacaoPage
   ],
   providers: [
     StatusBar,

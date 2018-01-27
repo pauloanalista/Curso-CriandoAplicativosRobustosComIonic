@@ -11,4 +11,7 @@ export class HomePage {
 
   }
 
+  redirecionarParaCurso(){
+    window.open('https://www.udemy.com/criando-aplicativos-robustos-com-ionic/?couponCode=IONIC25');
+  }
 }

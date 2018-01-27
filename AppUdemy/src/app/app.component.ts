@@ -37,6 +37,7 @@ import { BarcodePage } from '../pages/barcode/barcode';
 import { LocalizacaoPage } from '../pages/localizacao/localizacao';
 import { CepPage } from '../pages/cep/cep';
 import { StoragePage } from '../pages/storage/storage';
+import { AnimacaoPage } from '../pages/animacao/animacao';
 
 @Component({
   templateUrl: 'app.html'
@@ -87,6 +88,7 @@ export class MyApp {
       { title: 'Localização', component: LocalizacaoPage },
       { title: 'Http', component: CepPage },
       { title: 'Storage', component: StoragePage },
+      { title: 'Animações', component: AnimacaoPage },
       
     ];
   }
