@@ -1,4 +1,5 @@
 <ion-header>
+<<<<<<< HEAD
   
     <ion-navbar>
       <ion-title>Promoções</ion-title>
@@ -128,3 +129,134 @@
         </ion-row>
       </ion-card>
   </ion-content>
+=======
+
+  <ion-navbar>
+    <ion-title>Promoções</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  class="animated bounceInUp">
+  <ion-card>
+      <img src="assets/curso_api.jpg" (click)="showCurso('https://www.udemy.com/criando-apis-robustas-em-c/?couponCode=APIROBUSTA25')">
+      
+      <ion-item>
+        <ion-icon name="star" item-start large></ion-icon>
+        <h2>Criando Apis robustas em C#</h2>
+        <p>90% de desconto - R$25,00 </p>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="shared('https://www.facebook.com/sharer.php?u=https://www.udemy.com/criando-apis-robustas-em-c/?couponCode=APIROBUSTA25')">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="shared('https://twitter.com/intent/tweet?url=https://www.udemy.com/criando-apis-robustas-em-c/?couponCode=APIROBUSTA25&text=Criando Apis robustas em C#&via=udemy&hashtags=api, c#, curso')">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button ion-button icon-left clear small (click)="shared('https://www.linkedin.com/shareArticle?url=https://www.udemy.com/criando-apis-robustas-em-c/?couponCode=APIROBUSTA25&title=Criando Apis robustas em C#')">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/curso_ionic.jpg" (click)="showCurso('https://www.udemy.com/criando-aplicativos-robustos-com-ionic/?couponCode=IONIC25')">
+    
+      <ion-item>
+        <ion-icon name="star" item-start large></ion-icon>
+        <h2>Criando aplicativos robustos com Ionic</h2>
+        <p>92% de desconto - R$24,99 </p>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="shared('https://www.facebook.com/sharer.php?u=https://www.udemy.com/criando-aplicativos-robustos-com-ionic/?couponCode=IONIC25')">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="shared('https://twitter.com/intent/tweet?url=https://www.udemy.com/criando-aplicativos-robustos-com-ionic/?couponCode=IONIC25&text=Criando aplicativos robustos com Ionic&via=udemy&hashtags=ionic, ionic2, ionic3, android, ios')">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button ion-button icon-left clear small (click)="shared('https://www.linkedin.com/shareArticle?url=https://www.udemy.com/criando-aplicativos-robustos-com-ionic/?couponCode=IONIC25&title=Criando aplicativos robustos com Ionic')">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/curso_linq.jpg" (click)="showCurso('https://www.udemy.com/dominando-linq-e-lambda-expressions-com-c/?couponCode=LINQ_25')">
+    
+      <ion-item>
+        <ion-icon name="star" item-start large></ion-icon>
+        <h2>Dominando Linq e Lambda Expression com C#</h2>
+        <p>por apenas - R$25,00 </p>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="shared('https://www.facebook.com/sharer.php?u=https://www.udemy.com/dominando-linq-e-lambda-expressions-com-c/?couponCode=LINQ_25')">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="shared('https://twitter.com/intent/tweet?url=https://www.udemy.com/dominando-linq-e-lambda-expressions-com-c/?couponCode=LINQ_25&text=Dominando Linq e Lambda Expression com C#&via=udemy&hashtags=linq, lambda')">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button ion-button icon-left clear small (click)="shared('https://www.linkedin.com/shareArticle?url=https://www.udemy.com/dominando-linq-e-lambda-expressions-com-c/?couponCode=LINQ_25&title=Dominando Linq e Lambda Expression com C#')">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/curso_postman.jpg" (click)="showCurso('https://www.udemy.com/dominando-postman-em-10-passos/?couponCode=ILOVECODE_25')">
+    
+      <ion-item>
+        <ion-icon name="star" item-start large></ion-icon>
+        <h2>Dominando Postman em 10 passos</h2>
+        <p>por apenas - R$25,00 </p>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="shared('https://www.facebook.com/sharer.php?u=https://www.udemy.com/dominando-postman-em-10-passos/?couponCode=ILOVECODE_25')">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small (click)="shared('https://twitter.com/intent/tweet?url=https://www.udemy.com/dominando-postman-em-10-passos/?couponCode=ILOVECODE_25&text=Dominando Postman em 10 passos&via=udemy&hashtags=postman, curso')">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <button ion-button icon-left clear small (click)="shared('https://www.linkedin.com/shareArticle?url=https://www.udemy.com/dominando-linq-e-lambda-expressions-com-c/?couponCode=LINQ_25&title=Dominando Postman em 10 passos')">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+</ion-content>
+>>>>>>> 66a721dde5555353f08078924188618290f71aef
