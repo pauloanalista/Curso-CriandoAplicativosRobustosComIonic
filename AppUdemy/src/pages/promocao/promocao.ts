@@ -18,4 +18,8 @@ export class PromocaoPage {
   showCurso(url : string){
     window.open(url);
   }
+
+  shared(url : string){
+    window.open(url);
+  }
 }
