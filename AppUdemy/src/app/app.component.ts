@@ -47,12 +47,12 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  paginas: Array<{title: string, component: any}>;
+  paginas: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
-    
+
     this.paginas = [
       { title: 'Home', component: HomePage },
       { title: 'ActionSheet', component: ActionSheetPage },
@@ -89,7 +89,7 @@ export class MyApp {
       { title: 'Http', component: CepPage },
       { title: 'Storage', component: StoragePage },
       { title: 'Animações', component: AnimacaoPage },
-      
+
     ];
   }
 
@@ -99,6 +99,17 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      //Implementação do ONESIGNAL
+      let funcaoRetorno = (data) => {
+        console.log('Notificações: ' + JSON.stringify(data));
+      };
+
+      if (window["plugins"].OneSignal) {
+        window["plugins"].OneSignal.startInit("xxxx", "xxx")
+          .handleNotificationOpened(funcaoRetorno)
+          .endInit();
+      }
     });
   }
 

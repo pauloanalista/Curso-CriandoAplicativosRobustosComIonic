@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="curso.ionic.udemy" version="0.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="curso.ionic.udemy" version="0.0.9" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Curso Ionic</name>
     <description>Curso voltado para desenvolvedores mobile, utilizando o framework Ionic</description>
     <author email="paulo.analista@outlook.com" href="http://ionicframework.com/">Paulo Rogério</author>
@@ -87,5 +87,6 @@
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
     <plugin name="cordova-sqlite-storage" spec="^2.2.0" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.2.5" />
     <engine name="android" spec="7.0.0" />
 </widget>
