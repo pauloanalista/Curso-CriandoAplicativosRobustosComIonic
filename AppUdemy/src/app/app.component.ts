@@ -39,6 +39,7 @@ import { CepPage } from '../pages/cep/cep';
 import { StoragePage } from '../pages/storage/storage';
 import { AnimacaoPage } from '../pages/animacao/animacao';
 
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -48,6 +49,7 @@ export class MyApp {
   rootPage: any = HomePage;
 
   paginas: Array<{ title: string, component: any }>;
+  paginasComLazyLoad: Array<{ title: string, componentName: string }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -89,7 +91,11 @@ export class MyApp {
       { title: 'Http', component: CepPage },
       { title: 'Storage', component: StoragePage },
       { title: 'Animações', component: AnimacaoPage },
+    ];
 
+    this.paginasComLazyLoad = [
+      { title: 'Abrir pagina com LazyLoad', componentName: 'LazyLoadPage' },
+      { title: 'Formulário', componentName: 'FormularioPage' }
     ];
   }
 
@@ -106,7 +112,7 @@ export class MyApp {
       };
 
       if (window["plugins"].OneSignal) {
-        window["plugins"].OneSignal.startInit("xxxx", "xxx")
+        window["plugins"].OneSignal.startInit("2677f7be-ad8c-4790-bab1-42ed8db7dd2a", "699492162168")
           .handleNotificationOpened(funcaoRetorno)
           .endInit();
       }
@@ -116,5 +122,9 @@ export class MyApp {
   abrirPagina(page) {
     //this.nav.setRoot(page.component);
     this.nav.push(page.component);
+  }
+
+   abrirPaginaComLazyLoad(pagina){
+    this.nav.push(pagina.componentName);
   }
 }

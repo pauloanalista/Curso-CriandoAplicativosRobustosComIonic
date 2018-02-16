@@ -11,6 +11,12 @@
         {{pagina.title}}
       </button>
     </ion-list> 
+    <h4>Com LazyLoad</h4>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let pagina of paginasComLazyLoad" (click)="abrirPaginaComLazyLoad(pagina)">
+        {{pagina.title}}
+      </button>
+    </ion-list> 
   </ion-content>
 
 </ion-menu>
